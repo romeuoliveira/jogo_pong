@@ -2,13 +2,13 @@
 
 ## Curso de
 ## Lógica de programação: comece em lógica com o jogo Pong e JavaScript
- usando p5.js, uma biblioteca Java Script.
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"  width="30" height="30" />
+ usando p5.js, uma biblioteca Java Script
  
-- Desenvolva um jogo do zero em duas linguagens de programação diferentes
-- Dê seus primeiros passos no mundo do Javascript
-- Aprenda a trabalhar com variáveis e funções
-- Crie um jogo completo, com animações, controles, sons e placar
-- Saiba como utilizar em seus projetos um código compartilhado no Github
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"  width="30" height="30" />
+ 
+- desenvolvendo  um jogo do zero em duas linguagens de programação diferentes
+- com Javascript
+- trabalhando com variáveis e funções
+- criando um jogo completo, com animações, controles, sons e placar
 
 https://romeuoliveira.github.io/jogo_pong/
