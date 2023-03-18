@@ -61,6 +61,8 @@ function draw() {
   verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);
   incluiPlacar();
   marcaPonto();
+  verificaColisaoRaqueteBorda();
+  verificaColisaoRaqueteOponenteBorda();
 } 
 
 function mostraBolinha() {
@@ -102,9 +104,11 @@ function movimentaMinhaRaquete(){
   } 
 } 
 function verificaColisaoRaquete(){
-  if(xBolinha - raio < xRaquete + raqueteComprimento && yBolinha - raio < yRaquete + raqueteAltura && yBolinha + raio > yRaquete){
-    velocidadeXBolinha *= -1;
-    raquetada.play();
+  if(xBolinha - raio < xRaquete + raqueteComprimento&&
+       yBolinha - raio < yRaquete + raqueteAltura &&
+        yBolinha + raio > yRaquete){
+         velocidadeXBolinha *= -1;
+           raquetada.play();
   }   
 }
 
@@ -117,6 +121,24 @@ collideRectCircle(x, y, raqueteComprimento , raqueteAltura, xBolinha  ,  yBolinh
   }
 }
  
+
+function verificaColisaoRaqueteBorda(){
+  if (yRaquete < 0 )  {
+     yRaquete = 0; 
+  }
+  if (yRaquete + 90 > height){
+      yRaquete = 310 ;
+  }
+}
+
+function verificaColisaoRaqueteOponenteBorda(){
+  if (yRaqueteOponente < 0 )  {
+     yRaqueteOponente = 0; 
+  }
+  if (yRaqueteOponente + 90 > height){
+      yRaqueteOponente = 310;
+  }
+}
 function movimentaRaqueteOponente(){
   if (keyIsDown(UP_ARROW)){
    yRaqueteOponente -= 12;
