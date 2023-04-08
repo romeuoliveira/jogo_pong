@@ -154,10 +154,10 @@ function incluiPlacar (){
   textAlign (CENTER);
   textSize (18);
   fill(color(255, 140, 0));
-  rect (150, 12, 40, 20, 5 );
+  rect (130, 12, 40, 20, 5 );
   fill (0);
-  text(meusPontos, 170, 28);
-  fill(color(255, 140, 0));
+  text(meusPontos, 150, 28);
+  fill(color(255, 130, 0));
   rect (450, 12, 40, 20, 5);
   fill (0);
   text(pontosDoOponente, 470, 28);
